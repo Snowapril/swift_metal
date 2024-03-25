@@ -7,63 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9118BF052BB04ABE00DDA64B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9118BF042BB04ABE00DDA64B /* Base */; };
+		917346732BB06B3000462B40 /* BaseRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917346722BB06B3000462B40 /* BaseRenderer.swift */; };
+		917346742BB06B3000462B40 /* BaseRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917346722BB06B3000462B40 /* BaseRenderer.swift */; };
+		917346762BB06CAB00462B40 /* MeshRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917346752BB06CAB00462B40 /* MeshRenderer.swift */; };
+		917346772BB06CAB00462B40 /* MeshRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917346752BB06CAB00462B40 /* MeshRenderer.swift */; };
+		9173467B2BB06D0B00462B40 /* SceneObjectLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9173467A2BB06D0B00462B40 /* SceneObjectLoader.swift */; };
+		9173467C2BB06D0B00462B40 /* SceneObjectLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9173467A2BB06D0B00462B40 /* SceneObjectLoader.swift */; };
+		918519402BB1BC6F00C70212 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185193F2BB1BC6F00C70212 /* Material.swift */; };
+		918519412BB1BC6F00C70212 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185193F2BB1BC6F00C70212 /* Material.swift */; };
 		91A333372BB04086005E50B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A333362BB04086005E50B1 /* AppDelegate.swift */; };
 		91A333392BB04086005E50B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A333382BB04086005E50B1 /* ViewController.swift */; };
 		91A3333B2BB04087005E50B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A3333A2BB04087005E50B1 /* Assets.xcassets */; };
 		91A3333E2BB04087005E50B1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 91A3333D2BB04087005E50B1 /* Base */; };
-		91A333492BB04087005E50B1 /* swift_metalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A333482BB04087005E50B1 /* swift_metalTests.swift */; };
-		91A333532BB04087005E50B1 /* swift_metalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A333522BB04087005E50B1 /* swift_metalUITests.swift */; };
-		91A333552BB04087005E50B1 /* swift_metalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A333542BB04087005E50B1 /* swift_metalUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		91A333452BB04087005E50B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 91A3332B2BB04086005E50B1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 91A333322BB04086005E50B1;
-			remoteInfo = swift_metal;
-		};
-		91A3334F2BB04087005E50B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 91A3332B2BB04086005E50B1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 91A333322BB04086005E50B1;
-			remoteInfo = swift_metal;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9118BE8E2BB0416600DDA64B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		91A333332BB04086005E50B1 /* swift_metal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_metal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9118BEF62BB04ABD00DDA64B /* swift_metal_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_metal_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9118BEFF2BB04ABD00DDA64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9118BF042BB04ABE00DDA64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9118BF0D2BB04C5800DDA64B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		917346712BB06B3000462B40 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		917346722BB06B3000462B40 /* BaseRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRenderer.swift; sourceTree = "<group>"; };
+		917346752BB06CAB00462B40 /* MeshRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshRenderer.swift; sourceTree = "<group>"; };
+		9173467A2BB06D0B00462B40 /* SceneObjectLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneObjectLoader.swift; sourceTree = "<group>"; };
+		9185193F2BB1BC6F00C70212 /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		91A333332BB04086005E50B1 /* swift_metal_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_metal_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A333362BB04086005E50B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91A333382BB04086005E50B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		91A3333A2BB04087005E50B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91A3333D2BB04087005E50B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91A3333F2BB04087005E50B1 /* swift_metal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = swift_metal.entitlements; sourceTree = "<group>"; };
-		91A333442BB04087005E50B1 /* swift_metalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swift_metalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		91A333482BB04087005E50B1 /* swift_metalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_metalTests.swift; sourceTree = "<group>"; };
-		91A3334E2BB04087005E50B1 /* swift_metalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swift_metalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		91A333522BB04087005E50B1 /* swift_metalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_metalUITests.swift; sourceTree = "<group>"; };
-		91A333542BB04087005E50B1 /* swift_metalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_metalUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9118BEF32BB04ABD00DDA64B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91A333302BB04086005E50B1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		91A333412BB04087005E50B1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		91A3334B2BB04087005E50B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,13 +59,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9118BF0A2BB04ACF00DDA64B /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				91A3333C2BB04087005E50B1 /* Main.storyboard */,
+				91A3333F2BB04087005E50B1 /* swift_metal.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		9118BF0B2BB04ADF00DDA64B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9118BF0D2BB04C5800DDA64B /* Info.plist */,
+				9118BEFE2BB04ABD00DDA64B /* Main.storyboard */,
+				9118BF032BB04ABE00DDA64B /* LaunchScreen.storyboard */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		9118BF0C2BB04B0200DDA64B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				91A3333A2BB04087005E50B1 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		917346702BB06B1500462B40 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				917346782BB06CEB00462B40 /* SceneObject */,
+				917346722BB06B3000462B40 /* BaseRenderer.swift */,
+				917346752BB06CAB00462B40 /* MeshRenderer.swift */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		917346782BB06CEB00462B40 /* SceneObject */ = {
+			isa = PBXGroup;
+			children = (
+				9173467A2BB06D0B00462B40 /* SceneObjectLoader.swift */,
+				9185193F2BB1BC6F00C70212 /* Material.swift */,
+			);
+			path = SceneObject;
+			sourceTree = "<group>";
+		};
 		91A3332A2BB04086005E50B1 = {
 			isa = PBXGroup;
 			children = (
+				917346702BB06B1500462B40 /* Renderer */,
+				9118BF0C2BB04B0200DDA64B /* Assets */,
 				9118BE8E2BB0416600DDA64B /* README.md */,
-				91A333352BB04086005E50B1 /* swift_metal */,
-				91A333472BB04087005E50B1 /* swift_metalTests */,
-				91A333512BB04087005E50B1 /* swift_metalUITests */,
+				91A333352BB04086005E50B1 /* Application */,
 				91A333342BB04086005E50B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,48 +119,47 @@
 		91A333342BB04086005E50B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				91A333332BB04086005E50B1 /* swift_metal.app */,
-				91A333442BB04087005E50B1 /* swift_metalTests.xctest */,
-				91A3334E2BB04087005E50B1 /* swift_metalUITests.xctest */,
+				91A333332BB04086005E50B1 /* swift_metal_macOS.app */,
+				9118BEF62BB04ABD00DDA64B /* swift_metal_iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		91A333352BB04086005E50B1 /* swift_metal */ = {
+		91A333352BB04086005E50B1 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				9118BF0B2BB04ADF00DDA64B /* iOS */,
+				9118BF0A2BB04ACF00DDA64B /* macOS */,
 				91A333362BB04086005E50B1 /* AppDelegate.swift */,
+				917346712BB06B3000462B40 /* BridgingHeader.h */,
 				91A333382BB04086005E50B1 /* ViewController.swift */,
-				91A3333A2BB04087005E50B1 /* Assets.xcassets */,
-				91A3333C2BB04087005E50B1 /* Main.storyboard */,
-				91A3333F2BB04087005E50B1 /* swift_metal.entitlements */,
 			);
-			path = swift_metal;
-			sourceTree = "<group>";
-		};
-		91A333472BB04087005E50B1 /* swift_metalTests */ = {
-			isa = PBXGroup;
-			children = (
-				91A333482BB04087005E50B1 /* swift_metalTests.swift */,
-			);
-			path = swift_metalTests;
-			sourceTree = "<group>";
-		};
-		91A333512BB04087005E50B1 /* swift_metalUITests */ = {
-			isa = PBXGroup;
-			children = (
-				91A333522BB04087005E50B1 /* swift_metalUITests.swift */,
-				91A333542BB04087005E50B1 /* swift_metalUITestsLaunchTests.swift */,
-			);
-			path = swift_metalUITests;
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		91A333322BB04086005E50B1 /* swift_metal */ = {
+		9118BEF52BB04ABD00DDA64B /* swift_metal_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91A333582BB04087005E50B1 /* Build configuration list for PBXNativeTarget "swift_metal" */;
+			buildConfigurationList = 9118BF072BB04ABE00DDA64B /* Build configuration list for PBXNativeTarget "swift_metal_iOS" */;
+			buildPhases = (
+				9118BEF22BB04ABD00DDA64B /* Sources */,
+				9118BEF32BB04ABD00DDA64B /* Frameworks */,
+				9118BEF42BB04ABD00DDA64B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = swift_metal_iOS;
+			productName = swift_metal_ios;
+			productReference = 9118BEF62BB04ABD00DDA64B /* swift_metal_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91A333322BB04086005E50B1 /* swift_metal_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91A333582BB04087005E50B1 /* Build configuration list for PBXNativeTarget "swift_metal_macOS" */;
 			buildPhases = (
 				91A3332F2BB04086005E50B1 /* Sources */,
 				91A333302BB04086005E50B1 /* Frameworks */,
@@ -138,46 +169,10 @@
 			);
 			dependencies = (
 			);
-			name = swift_metal;
+			name = swift_metal_macOS;
 			productName = swift_metal;
-			productReference = 91A333332BB04086005E50B1 /* swift_metal.app */;
+			productReference = 91A333332BB04086005E50B1 /* swift_metal_macOS.app */;
 			productType = "com.apple.product-type.application";
-		};
-		91A333432BB04087005E50B1 /* swift_metalTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 91A3335B2BB04087005E50B1 /* Build configuration list for PBXNativeTarget "swift_metalTests" */;
-			buildPhases = (
-				91A333402BB04087005E50B1 /* Sources */,
-				91A333412BB04087005E50B1 /* Frameworks */,
-				91A333422BB04087005E50B1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				91A333462BB04087005E50B1 /* PBXTargetDependency */,
-			);
-			name = swift_metalTests;
-			productName = swift_metalTests;
-			productReference = 91A333442BB04087005E50B1 /* swift_metalTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		91A3334D2BB04087005E50B1 /* swift_metalUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 91A3335E2BB04087005E50B1 /* Build configuration list for PBXNativeTarget "swift_metalUITests" */;
-			buildPhases = (
-				91A3334A2BB04087005E50B1 /* Sources */,
-				91A3334B2BB04087005E50B1 /* Frameworks */,
-				91A3334C2BB04087005E50B1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				91A333502BB04087005E50B1 /* PBXTargetDependency */,
-			);
-			name = swift_metalUITests;
-			productName = swift_metalUITests;
-			productReference = 91A3334E2BB04087005E50B1 /* swift_metalUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -189,16 +184,12 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					9118BEF52BB04ABD00DDA64B = {
+						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
+					};
 					91A333322BB04086005E50B1 = {
 						CreatedOnToolsVersion = 15.3;
-					};
-					91A333432BB04087005E50B1 = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = 91A333322BB04086005E50B1;
-					};
-					91A3334D2BB04087005E50B1 = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = 91A333322BB04086005E50B1;
 					};
 				};
 			};
@@ -215,14 +206,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				91A333322BB04086005E50B1 /* swift_metal */,
-				91A333432BB04087005E50B1 /* swift_metalTests */,
-				91A3334D2BB04087005E50B1 /* swift_metalUITests */,
+				91A333322BB04086005E50B1 /* swift_metal_macOS */,
+				9118BEF52BB04ABD00DDA64B /* swift_metal_iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9118BEF42BB04ABD00DDA64B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9118BF052BB04ABE00DDA64B /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91A333312BB04086005E50B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,65 +230,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		91A333422BB04087005E50B1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		91A3334C2BB04087005E50B1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9118BEF22BB04ABD00DDA64B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				918519412BB1BC6F00C70212 /* Material.swift in Sources */,
+				9173467C2BB06D0B00462B40 /* SceneObjectLoader.swift in Sources */,
+				917346742BB06B3000462B40 /* BaseRenderer.swift in Sources */,
+				917346772BB06CAB00462B40 /* MeshRenderer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91A3332F2BB04086005E50B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				917346732BB06B3000462B40 /* BaseRenderer.swift in Sources */,
+				917346762BB06CAB00462B40 /* MeshRenderer.swift in Sources */,
 				91A333392BB04086005E50B1 /* ViewController.swift in Sources */,
+				9173467B2BB06D0B00462B40 /* SceneObjectLoader.swift in Sources */,
+				918519402BB1BC6F00C70212 /* Material.swift in Sources */,
 				91A333372BB04086005E50B1 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		91A333402BB04087005E50B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				91A333492BB04087005E50B1 /* swift_metalTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		91A3334A2BB04087005E50B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				91A333552BB04087005E50B1 /* swift_metalUITestsLaunchTests.swift in Sources */,
-				91A333532BB04087005E50B1 /* swift_metalUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		91A333462BB04087005E50B1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 91A333322BB04086005E50B1 /* swift_metal */;
-			targetProxy = 91A333452BB04087005E50B1 /* PBXContainerItemProxy */;
-		};
-		91A333502BB04087005E50B1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 91A333322BB04086005E50B1 /* swift_metal */;
-			targetProxy = 91A3334F2BB04087005E50B1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
+		9118BEFE2BB04ABD00DDA64B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9118BEFF2BB04ABD00DDA64B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9118BF032BB04ABE00DDA64B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9118BF042BB04ABE00DDA64B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		91A3333C2BB04087005E50B1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -302,6 +287,74 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9118BF082BB04ABE00DDA64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6Y2992257;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Application/iOS/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "snowapril.swift-metal-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Renderer/swift_metal_iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9118BF092BB04ABE00DDA64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6Y2992257;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Application/iOS/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "snowapril.swift-metal-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Renderer/swift_metal_iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		91A333562BB04087005E50B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -425,7 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = swift_metal/swift_metal.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Application/macOS/swift_metal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -450,7 +503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = swift_metal/swift_metal.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Application/macOS/swift_metal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -470,77 +523,18 @@
 			};
 			name = Release;
 		};
-		91A3335C2BB04087005E50B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "snowapril.swift-metalTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift_metal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/swift_metal";
-			};
-			name = Debug;
-		};
-		91A3335D2BB04087005E50B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "snowapril.swift-metalTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift_metal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/swift_metal";
-			};
-			name = Release;
-		};
-		91A3335F2BB04087005E50B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "snowapril.swift-metalUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = swift_metal;
-			};
-			name = Debug;
-		};
-		91A333602BB04087005E50B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "snowapril.swift-metalUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = swift_metal;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9118BF072BB04ABE00DDA64B /* Build configuration list for PBXNativeTarget "swift_metal_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9118BF082BB04ABE00DDA64B /* Debug */,
+				9118BF092BB04ABE00DDA64B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		91A3332E2BB04086005E50B1 /* Build configuration list for PBXProject "swift_metal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -550,29 +544,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91A333582BB04087005E50B1 /* Build configuration list for PBXNativeTarget "swift_metal" */ = {
+		91A333582BB04087005E50B1 /* Build configuration list for PBXNativeTarget "swift_metal_macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91A333592BB04087005E50B1 /* Debug */,
 				91A3335A2BB04087005E50B1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		91A3335B2BB04087005E50B1 /* Build configuration list for PBXNativeTarget "swift_metalTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				91A3335C2BB04087005E50B1 /* Debug */,
-				91A3335D2BB04087005E50B1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		91A3335E2BB04087005E50B1 /* Build configuration list for PBXNativeTarget "swift_metalUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				91A3335F2BB04087005E50B1 /* Debug */,
-				91A333602BB04087005E50B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
