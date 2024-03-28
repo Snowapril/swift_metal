@@ -18,7 +18,7 @@ typealias PlatformViewController = NSViewController
 class ViewController: PlatformViewController {
     
     var mtkView : MTKView!
-    var renderer : BaseRenderer!
+    var renderer : RendererDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +40,7 @@ class ViewController: PlatformViewController {
         mtkView.depthStencilPixelFormat = .depth32Float_stencil8
         mtkView.colorPixelFormat = .bgra8Unorm_srgb
         
-        renderer = BaseRenderer(device: device)
+        renderer = RendererDelegate(device: device, args: CommandLine.arguments)
         mtkView.delegate = renderer
     }
 
@@ -49,7 +49,5 @@ class ViewController: PlatformViewController {
         // Update the view, if already loaded.
         }
     }
-
-
 }
 

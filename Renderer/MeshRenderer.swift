@@ -7,16 +7,16 @@
 
 import MetalKit
 
-class MeshRenderer : BaseRenderer {
-    
+class MeshRenderer : RendererProtocol {
+    var device: MTLDevice!
 }
 
 extension MeshRenderer {
-    override func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {
+    func resize(_ view: MTKView, drawableSizeWillChange size: CGSize) {
         // Empty
     }
     
-    override func draw(in view: MTKView) {
+    func draw(in view: MTKView, commandBuffer: MTLCommandBuffer!) {
         // Empty
     }
 }
