@@ -7,7 +7,7 @@
 
 import MetalKit
 
-class MeshRenderer : RendererProtocol {
+class MeshRenderer: RendererProtocol {
     var device: MTLDevice!
 }
 
@@ -15,7 +15,7 @@ extension MeshRenderer {
     func resize(_ view: MTKView, drawableSizeWillChange size: CGSize) {
         // Empty
     }
-    
+
     func draw(in view: MTKView, commandBuffer: MTLCommandBuffer!) {
         // Empty
     }

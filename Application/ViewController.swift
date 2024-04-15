@@ -8,46 +8,50 @@
 import MetalKit
 
 #if os(iOS) || os(tvOS)
-import UIKit
-typealias PlatformViewController = UIViewController
+    import UIKit
+    typealias PlatformViewController = UIViewController
 #else
-import AppKit
-typealias PlatformViewController = NSViewController
+    import AppKit
+    typealias PlatformViewController = NSViewController
 #endif
 
 class ViewController: PlatformViewController {
-    
-    var mtkView : MTKView!
-    var renderer : RendererDelegate!
-    
+
+    var mtkView: MTKView!
+    var renderer: RendererDelegate!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         guard let device = MTLCreateSystemDefaultDevice() else {
             fatalError("Failed to create system default device")
         }
-        
+
         mtkView = MTKView(frame: view.frame, device: device)
         view.addSubview(mtkView)
-        
+
         NSLayoutConstraint.activate([
             mtkView.topAnchor.constraint(equalTo: view.topAnchor),
             mtkView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             mtkView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            mtkView.bottomAnchor.constraint(equalTo: view.bottomAnchor)])
-        
+            mtkView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+        ])
+
         // Set the pixel formats of the render destination.
         mtkView.depthStencilPixelFormat = .depth32Float_stencil8
         mtkView.colorPixelFormat = .bgra8Unorm_srgb
-        
-        renderer = RendererDelegate(device: device, args: CommandLine.arguments)
+
+        let rendererDescriptor = RendererDescriptor()
+        for arg in CommandLine.arguments {
+            // parse arg
+        }
+        renderer = RendererDelegate(device: device, desc: rendererDescriptor)
         mtkView.delegate = renderer
     }
 
     override var representedObject: Any? {
         didSet {
-        // Update the view, if already loaded.
+            // Update the view, if already loaded.
         }
     }
 }
-

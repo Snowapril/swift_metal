@@ -11,7 +11,6 @@
 
 struct TerrainPatch
 {
-    simd::float3 center;
     float width;
 };
 
