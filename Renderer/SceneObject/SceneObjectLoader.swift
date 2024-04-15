@@ -8,13 +8,13 @@
 import MetalKit
 
 struct SceneObject {
-    
+
 }
 
 class SceneObjectLoader {
-    
-    func loadSceneObject(objPath : String) -> SceneObject {
-        
+
+    func loadSceneObject(objPath: String) -> SceneObject {
+
         SceneObject()
     }
 }

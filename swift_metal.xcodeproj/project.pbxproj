@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9118BF052BB04ABE00DDA64B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9118BF042BB04ABE00DDA64B /* Base */; };
+		913609DA2BCD238E00660F4B /* .swift-format in Resources */ = {isa = PBXBuildFile; fileRef = 913609D92BCD238E00660F4B /* .swift-format */; };
+		913609DB2BCD238E00660F4B /* .swift-format in Resources */ = {isa = PBXBuildFile; fileRef = 913609D92BCD238E00660F4B /* .swift-format */; };
 		9150BC9A2BB5A97100F4FECE /* TerrainPatchGen.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9150BC992BB5A97100F4FECE /* TerrainPatchGen.metal */; };
 		9150BC9B2BB5A97100F4FECE /* TerrainPatchGen.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9150BC992BB5A97100F4FECE /* TerrainPatchGen.metal */; };
 		9150BC9D2BB5AAD000F4FECE /* TerrainRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9150BC9C2BB5AAD000F4FECE /* TerrainRenderer.swift */; };
@@ -22,6 +24,10 @@
 		917346772BB06CAB00462B40 /* MeshRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917346752BB06CAB00462B40 /* MeshRenderer.swift */; };
 		9173467B2BB06D0B00462B40 /* SceneObjectLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9173467A2BB06D0B00462B40 /* SceneObjectLoader.swift */; };
 		9173467C2BB06D0B00462B40 /* SceneObjectLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9173467A2BB06D0B00462B40 /* SceneObjectLoader.swift */; };
+		9178D1532BC2651600775C68 /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9178D1522BC2651600775C68 /* Mesh.swift */; };
+		9178D1542BC2651600775C68 /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9178D1522BC2651600775C68 /* Mesh.swift */; };
+		9178D1562BC2651C00775C68 /* SubMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9178D1552BC2651C00775C68 /* SubMesh.swift */; };
+		9178D1572BC2651C00775C68 /* SubMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9178D1552BC2651C00775C68 /* SubMesh.swift */; };
 		918519402BB1BC6F00C70212 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185193F2BB1BC6F00C70212 /* Material.swift */; };
 		918519412BB1BC6F00C70212 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185193F2BB1BC6F00C70212 /* Material.swift */; };
 		91A333372BB04086005E50B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A333362BB04086005E50B1 /* AppDelegate.swift */; };
@@ -36,6 +42,7 @@
 		9118BEFF2BB04ABD00DDA64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9118BF042BB04ABE00DDA64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9118BF0D2BB04C5800DDA64B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		913609D92BCD238E00660F4B /* .swift-format */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-format"; sourceTree = "<group>"; };
 		9150BC982BB5A7DD00F4FECE /* MetalShaderBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalShaderBridge.h; sourceTree = "<group>"; };
 		9150BC992BB5A97100F4FECE /* TerrainPatchGen.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TerrainPatchGen.metal; sourceTree = "<group>"; };
 		9150BC9C2BB5AAD000F4FECE /* TerrainRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerrainRenderer.swift; sourceTree = "<group>"; };
@@ -45,6 +52,8 @@
 		917346722BB06B3000462B40 /* RendererProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererProtocol.swift; sourceTree = "<group>"; };
 		917346752BB06CAB00462B40 /* MeshRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshRenderer.swift; sourceTree = "<group>"; };
 		9173467A2BB06D0B00462B40 /* SceneObjectLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneObjectLoader.swift; sourceTree = "<group>"; };
+		9178D1522BC2651600775C68 /* Mesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
+		9178D1552BC2651C00775C68 /* SubMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMesh.swift; sourceTree = "<group>"; };
 		9185193F2BB1BC6F00C70212 /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
 		91A333332BB04086005E50B1 /* swift_metal_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_metal_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A333362BB04086005E50B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +135,8 @@
 			children = (
 				9173467A2BB06D0B00462B40 /* SceneObjectLoader.swift */,
 				9185193F2BB1BC6F00C70212 /* Material.swift */,
+				9178D1522BC2651600775C68 /* Mesh.swift */,
+				9178D1552BC2651C00775C68 /* SubMesh.swift */,
 			);
 			path = SceneObject;
 			sourceTree = "<group>";
@@ -133,6 +144,7 @@
 		91A3332A2BB04086005E50B1 = {
 			isa = PBXGroup;
 			children = (
+				913609D92BCD238E00660F4B /* .swift-format */,
 				9150BC972BB5A2C100F4FECE /* Shader */,
 				917346702BB06B1500462B40 /* Renderer */,
 				9118BF0C2BB04B0200DDA64B /* Assets */,
@@ -243,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				913609DB2BCD238E00660F4B /* .swift-format in Resources */,
 				9118BF052BB04ABE00DDA64B /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91A3333B2BB04087005E50B1 /* Assets.xcassets in Resources */,
+				913609DA2BCD238E00660F4B /* .swift-format in Resources */,
 				91A3333E2BB04087005E50B1 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,11 +278,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				918519412BB1BC6F00C70212 /* Material.swift in Sources */,
+				9178D1572BC2651C00775C68 /* SubMesh.swift in Sources */,
 				9150BC9B2BB5A97100F4FECE /* TerrainPatchGen.metal in Sources */,
 				9150BC9E2BB5AAD000F4FECE /* TerrainRenderer.swift in Sources */,
 				9150BCA42BB5AD8B00F4FECE /* RendererDelegate.swift in Sources */,
 				9173467C2BB06D0B00462B40 /* SceneObjectLoader.swift in Sources */,
 				917346742BB06B3000462B40 /* RendererProtocol.swift in Sources */,
+				9178D1542BC2651600775C68 /* Mesh.swift in Sources */,
 				9150BCA12BB5AB5E00F4FECE /* RendererDescriptor.swift in Sources */,
 				917346772BB06CAB00462B40 /* MeshRenderer.swift in Sources */,
 			);
@@ -279,11 +295,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				917346732BB06B3000462B40 /* RendererProtocol.swift in Sources */,
+				9178D1532BC2651600775C68 /* Mesh.swift in Sources */,
 				9150BCA02BB5AB5E00F4FECE /* RendererDescriptor.swift in Sources */,
 				9150BC9A2BB5A97100F4FECE /* TerrainPatchGen.metal in Sources */,
 				9150BCA32BB5AD8B00F4FECE /* RendererDelegate.swift in Sources */,
 				917346762BB06CAB00462B40 /* MeshRenderer.swift in Sources */,
 				91A333392BB04086005E50B1 /* ViewController.swift in Sources */,
+				9178D1562BC2651C00775C68 /* SubMesh.swift in Sources */,
 				9150BC9D2BB5AAD000F4FECE /* TerrainRenderer.swift in Sources */,
 				9173467B2BB06D0B00462B40 /* SceneObjectLoader.swift in Sources */,
 				918519402BB1BC6F00C70212 /* Material.swift in Sources */,
@@ -448,7 +466,9 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/Shader/MetalShaderBridge.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 			};
 			name = Debug;
 		};
@@ -504,6 +524,8 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/Shader/MetalShaderBridge.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 			};
 			name = Release;
 		};
