@@ -7,17 +7,25 @@
 
 import MetalKit
 
+struct FrameContext {
+    var frameIndex: Int = 0
+}
+
 class RendererDelegate: NSObject {
     var device: MTLDevice!
     var commandQueue: MTLCommandQueue!
     var renderers: [RendererProtocol]
+    var frameContext = FrameContext()
 
     init(device: MTLDevice!, desc: RendererDescriptor) {
         self.device = device
         self.commandQueue = device.makeCommandQueue()
 
         self.renderers = []
+
         self.renderers.append(TerrainRenderer(device: device, desc: desc))
+        self.renderers.append(MeshRenderer(device: device, desc: desc))
+        self.renderers.append(PostProcessRenderer(device: device, desc: desc))
     }
 }
 
@@ -43,5 +51,11 @@ extension RendererDelegate: MTKViewDelegate {
         for renderer in self.renderers {
             renderer.draw(in: view, commandBuffer: commandBuffer)
         }
+
+        if let drawable = view.currentDrawable {
+            commandBuffer.present(drawable)
+        }
+
+        commandBuffer.commit()
     }
 }
