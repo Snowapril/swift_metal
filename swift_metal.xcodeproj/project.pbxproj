@@ -12,6 +12,10 @@
 		913609DB2BCD238E00660F4B /* .swift-format in Resources */ = {isa = PBXBuildFile; fileRef = 913609D92BCD238E00660F4B /* .swift-format */; };
 		913609DD2BCD286100660F4B /* PostProcessRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913609DC2BCD286100660F4B /* PostProcessRenderer.swift */; };
 		913609DE2BCD286100660F4B /* PostProcessRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913609DC2BCD286100660F4B /* PostProcessRenderer.swift */; };
+		913609E12BCD2DDC00660F4B /* MetalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913609E02BCD2DDC00660F4B /* MetalExtensions.swift */; };
+		913609E22BCD2DDC00660F4B /* MetalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913609E02BCD2DDC00660F4B /* MetalExtensions.swift */; };
+		913609E42BCD317D00660F4B /* RenderInstanceCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913609E32BCD317D00660F4B /* RenderInstanceCollection.swift */; };
+		913609E52BCD317D00660F4B /* RenderInstanceCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913609E32BCD317D00660F4B /* RenderInstanceCollection.swift */; };
 		9150BC9A2BB5A97100F4FECE /* TerrainPatchGen.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9150BC992BB5A97100F4FECE /* TerrainPatchGen.metal */; };
 		9150BC9B2BB5A97100F4FECE /* TerrainPatchGen.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9150BC992BB5A97100F4FECE /* TerrainPatchGen.metal */; };
 		9150BC9D2BB5AAD000F4FECE /* TerrainRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9150BC9C2BB5AAD000F4FECE /* TerrainRenderer.swift */; };
@@ -46,6 +50,8 @@
 		9118BF0D2BB04C5800DDA64B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		913609D92BCD238E00660F4B /* .swift-format */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-format"; sourceTree = "<group>"; };
 		913609DC2BCD286100660F4B /* PostProcessRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProcessRenderer.swift; sourceTree = "<group>"; };
+		913609E02BCD2DDC00660F4B /* MetalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalExtensions.swift; sourceTree = "<group>"; };
+		913609E32BCD317D00660F4B /* RenderInstanceCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderInstanceCollection.swift; sourceTree = "<group>"; };
 		9150BC982BB5A7DD00F4FECE /* MetalShaderBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalShaderBridge.h; sourceTree = "<group>"; };
 		9150BC992BB5A97100F4FECE /* TerrainPatchGen.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TerrainPatchGen.metal; sourceTree = "<group>"; };
 		9150BC9C2BB5AAD000F4FECE /* TerrainRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerrainRenderer.swift; sourceTree = "<group>"; };
@@ -111,6 +117,14 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		913609DF2BCD2DCF00660F4B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				913609E02BCD2DDC00660F4B /* MetalExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9150BC972BB5A2C100F4FECE /* Shader */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +137,7 @@
 		917346702BB06B1500462B40 /* Renderer */ = {
 			isa = PBXGroup;
 			children = (
+				913609DF2BCD2DCF00660F4B /* Extensions */,
 				917346782BB06CEB00462B40 /* SceneObject */,
 				917346722BB06B3000462B40 /* RendererProtocol.swift */,
 				917346752BB06CAB00462B40 /* MeshRenderer.swift */,
@@ -141,6 +156,7 @@
 				9185193F2BB1BC6F00C70212 /* Material.swift */,
 				9178D1522BC2651600775C68 /* Mesh.swift */,
 				9178D1552BC2651C00775C68 /* SubMesh.swift */,
+				913609E32BCD317D00660F4B /* RenderInstanceCollection.swift */,
 			);
 			path = SceneObject;
 			sourceTree = "<group>";
@@ -285,6 +301,7 @@
 				9178D1572BC2651C00775C68 /* SubMesh.swift in Sources */,
 				913609DE2BCD286100660F4B /* PostProcessRenderer.swift in Sources */,
 				9150BC9B2BB5A97100F4FECE /* TerrainPatchGen.metal in Sources */,
+				913609E52BCD317D00660F4B /* RenderInstanceCollection.swift in Sources */,
 				9150BC9E2BB5AAD000F4FECE /* TerrainRenderer.swift in Sources */,
 				9150BCA42BB5AD8B00F4FECE /* RendererDelegate.swift in Sources */,
 				9173467C2BB06D0B00462B40 /* SceneObjectLoader.swift in Sources */,
@@ -292,6 +309,7 @@
 				9178D1542BC2651600775C68 /* Mesh.swift in Sources */,
 				9150BCA12BB5AB5E00F4FECE /* RendererDescriptor.swift in Sources */,
 				917346772BB06CAB00462B40 /* MeshRenderer.swift in Sources */,
+				913609E22BCD2DDC00660F4B /* MetalExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +321,7 @@
 				917346732BB06B3000462B40 /* RendererProtocol.swift in Sources */,
 				9178D1532BC2651600775C68 /* Mesh.swift in Sources */,
 				9150BCA02BB5AB5E00F4FECE /* RendererDescriptor.swift in Sources */,
+				913609E42BCD317D00660F4B /* RenderInstanceCollection.swift in Sources */,
 				9150BC9A2BB5A97100F4FECE /* TerrainPatchGen.metal in Sources */,
 				9150BCA32BB5AD8B00F4FECE /* RendererDelegate.swift in Sources */,
 				917346762BB06CAB00462B40 /* MeshRenderer.swift in Sources */,
@@ -310,6 +329,7 @@
 				9178D1562BC2651C00775C68 /* SubMesh.swift in Sources */,
 				9150BC9D2BB5AAD000F4FECE /* TerrainRenderer.swift in Sources */,
 				9173467B2BB06D0B00462B40 /* SceneObjectLoader.swift in Sources */,
+				913609E12BCD2DDC00660F4B /* MetalExtensions.swift in Sources */,
 				918519402BB1BC6F00C70212 /* Material.swift in Sources */,
 				91A333372BB04086005E50B1 /* AppDelegate.swift in Sources */,
 			);

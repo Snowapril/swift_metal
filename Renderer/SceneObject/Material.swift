@@ -71,3 +71,26 @@ class Material {
         return loadedTexture
     }
 }
+
+extension Material: Hashable {
+    static func == (lhs: Material, rhs: Material) -> Bool {
+        if lhs.textures.keys != rhs.textures.keys {
+            return false
+        }
+        for (rhsKey, rhsValue) in rhs.textures {
+            if let lhsValue = lhs.textures[rhsKey],
+                lhsValue.gpuResourceID._impl != rhsValue.gpuResourceID._impl
+            {
+                return false
+            }
+        }
+        return true
+    }
+
+    func hash(into hasher: inout Hasher) {
+        for (key, value) in self.textures {
+            hasher.combine(key.hashValue)
+            hasher.combine(value.hash)
+        }
+    }
+}
