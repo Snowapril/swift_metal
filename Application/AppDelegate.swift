@@ -5,8 +5,6 @@
 //  Created by snowapril on 3/24/24.
 //
 
-import Cocoa
-
 #if os(iOS) || os(tvOS)
     import UIKit
 

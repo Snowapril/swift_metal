@@ -25,7 +25,7 @@ class TerrainRenderer: RendererProtocol {
         )
         self.descBuffer = device.makeBuffer(
             length: MemoryLayout<TerrainPatchGenDesc>.size,
-            options: .storageModeManaged
+            options: .storageModeShared
         )
         self.patchBuffer = device.makeBuffer(
             length: MemoryLayout<TerrainPatch>.size * Int(desc.maxNumPatches),

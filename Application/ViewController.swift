@@ -49,9 +49,11 @@ class ViewController: PlatformViewController {
         mtkView.delegate = renderer
     }
 
-    override var representedObject: Any? {
-        didSet {
-            // Update the view, if already loaded.
+    #if os(macOS)
+        override var representedObject: Any? {
+            didSet {
+                // Update the view, if already loaded.
+            }
         }
-    }
+    #endif
 }

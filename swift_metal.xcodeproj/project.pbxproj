@@ -24,6 +24,11 @@
 		9150BCA12BB5AB5E00F4FECE /* RendererDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9150BC9F2BB5AB5E00F4FECE /* RendererDescriptor.swift */; };
 		9150BCA32BB5AD8B00F4FECE /* RendererDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9150BCA22BB5AD8B00F4FECE /* RendererDelegate.swift */; };
 		9150BCA42BB5AD8B00F4FECE /* RendererDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9150BCA22BB5AD8B00F4FECE /* RendererDelegate.swift */; };
+		915D54732BCFEE7300B5D81F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A333362BB04086005E50B1 /* AppDelegate.swift */; };
+		915D54742BCFEEC300B5D81F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9118BEFE2BB04ABD00DDA64B /* Main.storyboard */; };
+		915D54752BCFEEC600B5D81F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A3333C2BB04087005E50B1 /* Main.storyboard */; };
+		915D54762BCFEEE400B5D81F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9118BF032BB04ABE00DDA64B /* LaunchScreen.storyboard */; };
+		915D54772BCFEF1900B5D81F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A333382BB04086005E50B1 /* ViewController.swift */; };
 		917346732BB06B3000462B40 /* RendererProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917346722BB06B3000462B40 /* RendererProtocol.swift */; };
 		917346742BB06B3000462B40 /* RendererProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917346722BB06B3000462B40 /* RendererProtocol.swift */; };
 		917346762BB06CAB00462B40 /* MeshRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917346752BB06CAB00462B40 /* MeshRenderer.swift */; };
@@ -39,7 +44,6 @@
 		91A333372BB04086005E50B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A333362BB04086005E50B1 /* AppDelegate.swift */; };
 		91A333392BB04086005E50B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A333382BB04086005E50B1 /* ViewController.swift */; };
 		91A3333B2BB04087005E50B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A3333A2BB04087005E50B1 /* Assets.xcassets */; };
-		91A3333E2BB04087005E50B1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 91A3333D2BB04087005E50B1 /* Base */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +61,7 @@
 		9150BC9C2BB5AAD000F4FECE /* TerrainRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerrainRenderer.swift; sourceTree = "<group>"; };
 		9150BC9F2BB5AB5E00F4FECE /* RendererDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererDescriptor.swift; sourceTree = "<group>"; };
 		9150BCA22BB5AD8B00F4FECE /* RendererDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererDelegate.swift; sourceTree = "<group>"; };
+		915D54782BCFF53D00B5D81F /* swift-metal-macOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "swift-metal-macOS-Info.plist"; sourceTree = "<group>"; };
 		917346712BB06B3000462B40 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		917346722BB06B3000462B40 /* RendererProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererProtocol.swift; sourceTree = "<group>"; };
 		917346752BB06CAB00462B40 /* MeshRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshRenderer.swift; sourceTree = "<group>"; };
@@ -164,6 +169,7 @@
 		91A3332A2BB04086005E50B1 = {
 			isa = PBXGroup;
 			children = (
+				915D54782BCFF53D00B5D81F /* swift-metal-macOS-Info.plist */,
 				913609D92BCD238E00660F4B /* .swift-format */,
 				9150BC972BB5A2C100F4FECE /* Shader */,
 				917346702BB06B1500462B40 /* Renderer */,
@@ -275,6 +281,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				915D54742BCFEEC300B5D81F /* Main.storyboard in Resources */,
+				915D54762BCFEEE400B5D81F /* LaunchScreen.storyboard in Resources */,
 				913609DB2BCD238E00660F4B /* .swift-format in Resources */,
 				9118BF052BB04ABE00DDA64B /* Base in Resources */,
 			);
@@ -286,7 +294,7 @@
 			files = (
 				91A3333B2BB04087005E50B1 /* Assets.xcassets in Resources */,
 				913609DA2BCD238E00660F4B /* .swift-format in Resources */,
-				91A3333E2BB04087005E50B1 /* Base in Resources */,
+				915D54752BCFEEC600B5D81F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,10 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				915D54772BCFEF1900B5D81F /* ViewController.swift in Sources */,
 				918519412BB1BC6F00C70212 /* Material.swift in Sources */,
 				9178D1572BC2651C00775C68 /* SubMesh.swift in Sources */,
 				913609DE2BCD286100660F4B /* PostProcessRenderer.swift in Sources */,
 				9150BC9B2BB5A97100F4FECE /* TerrainPatchGen.metal in Sources */,
+				915D54732BCFEE7300B5D81F /* AppDelegate.swift in Sources */,
 				913609E52BCD317D00660F4B /* RenderInstanceCollection.swift in Sources */,
 				9150BC9E2BB5AAD000F4FECE /* TerrainRenderer.swift in Sources */,
 				9150BCA42BB5AD8B00F4FECE /* RendererDelegate.swift in Sources */,
@@ -378,8 +388,8 @@
 				INFOPLIST_FILE = Application/iOS/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -387,12 +397,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "";
 				MARKETING_VERSION = 1.0;
+				MTL_PREPROCESSOR_DEFINITIONS = "TARGET_IOS=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "snowapril.swift-metal-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Renderer/swift_metal_iOS-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/Shader/MetalShaderBridge.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -412,8 +424,8 @@
 				INFOPLIST_FILE = Application/iOS/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -421,12 +433,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "";
 				MARKETING_VERSION = 1.0;
+				MTL_PREPROCESSOR_DEFINITIONS = "TARGET_IOS=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "snowapril.swift-metal-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Renderer/swift_metal_iOS-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/Shader/MetalShaderBridge.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -565,6 +579,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "swift-metal-macOS-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -573,6 +588,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				MTL_PREPROCESSOR_DEFINITIONS = "TARGET_MACOS=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "snowapril.swift-metal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -590,6 +606,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "swift-metal-macOS-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -598,6 +615,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				MTL_PREPROCESSOR_DEFINITIONS = "TARGET_MACOS=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "snowapril.swift-metal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
